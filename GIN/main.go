@@ -17,9 +17,6 @@ var (
 
 func main() {
 
-	// Railway tidak pakai godotenv, jadi hapus:
-	// godotenv.Load("config/.env")
-
 	// Pakai DATABASE_URL langsung (lebih aman)
 	dsn := os.Getenv("DATABASE_URL")
 	if dsn == "" {
